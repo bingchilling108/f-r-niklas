@@ -1,0 +1,38 @@
+:root {
+  --main-fg-color: rgb(163, 57, 57);
+  --main-bg-color: rgb(255, 255, 255);
+  --btn-bg-color: rgb(255, 255, 255);
+  --btn-fg-color: rgb(218, 118, 118);
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 10px;
+  min-height: 100vh;
+  background-color: var(--main-bg-color);
+}
+
+button {
+  cursor: pointer;
+  color: var(--btn-fg-color);
+  background: var(--btn-bg-color);
+  font-weight: bold;
+  border: solid 2px black;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 3px 2px 5px gray;
+}
+
+button:hover {
+  filter: brightness(1.1);
+}
+
+button:active {
+  filter: brightness(1.1);
+  transition: all 250ms;
+  box-shadow: none;
+  transform: translate(3px, 2px);
+}
